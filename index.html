@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tamagotchi Game</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  
+</head>
+<body>
+  <h1 class="game-title">
+    
+    PetPal Adventures
+    
+    <i class="fas fa-paw paw-icon"></i>
+    <i class="fas fa-paw paw-icon"></i>
+  </h1>
+       
+
+  <div style="text-align:center; margin-top: 10px;">
+    <input type="text" id="petNameInput" placeholder="Enter pet name" />
+    <select id="animalTypeSelect">
+      <option value="Dog">Dog</option>
+      <option value="Cat">Cat</option>
+      <option value="Rabbit">Rabbit</option>
+      <option value="Fox">Fox</option>
+    </select>
+    <button id="createPetBtn">Create Pet</button>
+    <button id="resetBtn">Reset Game</button>
+  </div>
+    <div id="petContainer"></div>
+
+    <textarea id="logBox" rows="10" cols="50" readonly></textarea>
+    
+    <audio id="backgroundMusic" src="audio/background.mp3" loop autoplay></audio>
+    <audio id="actionSound" src="audio/soundboards.mp3"></audio>
+    <audio id="resetSound" src="audio/resettrack.mp3"></audio>
+
+    <!-- Music ON/OFF Toggle -->
+    <button id="toggleMusicBtn">🔊 Music On/Off</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
